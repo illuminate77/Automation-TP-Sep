@@ -1,0 +1,25 @@
+h1{
+    text-align: center;
+    font-family: courier, courier-new, serif;
+    font-size: 20pt;
+    color: orange;
+}
+p{
+    font-family: arial, verdana, sans-serif;
+    font-size: 12pt;
+    color: black;
+    font-style: italic;
+}
+main{
+    text-align: center;
+}
+img{
+    border-radius: 8px;
+    width: 720px;
+    height: 480px;
+}
+footer{
+    text-align: center;
+    color: black;
+    text-shadow: 3px 3px 2px black;
+}
