@@ -27,4 +27,28 @@ let checkTypeOf = combinedArray.map((element: number | string) => {
         return `This is a string with the value of ${element}`
     }
 });
-console.log(checkTypeOf);
+//console.log(checkTypeOf);
+
+//filter method - filters using a specific requirement
+let positiveNums: number[] = [2, 3, 4, 5, 6];
+positiveNums.filter((num: number) => num > 2);
+
+//sort method - sorts the array asc or desc
+const months: string[] = ['March', 'Jan', 'Feb', 'Dec'];
+const arr2: number[] = [19, 3, 99, 29, 107];
+let sortedArr2 = arr2.sort((a: number, b: number) => a - b);
+//a-b is for ascending while b-a is for descending
+console.log(sortedArr2);
+
+//push method - adds one element at the end of array
+sortedArr2.push(200);
+
+//pop method - removes last index element
+sortedArr2.pop();
+
+//shift method - removes first index element
+sortedArr2.shift();
+
+//method unshift - adds element to the first index
+sortedArr2.unshift();
+
