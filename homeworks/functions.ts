@@ -44,3 +44,11 @@ function substractNums(numOne: number = 10, numTwo: number = 5) {
 }
 substractNums(50); //10 becomes 50, 5 unchanged
 substractNums(50, 30); //both changed
+
+//functions with parameters of union type
+function printId(id: string | number) {
+    console.log(`Id - ${id} is type of ${typeof id}`)
+};
+
+printId("#10");
+printId(10);

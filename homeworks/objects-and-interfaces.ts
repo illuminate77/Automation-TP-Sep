@@ -39,7 +39,7 @@ person.greeting();//like you would call any other function, adding ()
 //properties redeclaration
 //declaring with const lets us change values (zdravko -> ivan) but we can't change keys (can't add for example more name fields)
 person.age = 28;//27 becomes 28 in the object at the top
-console.log(person);
+//console.log(person);
 
 //object typization
 const person2: {name: string, lastName: string, age: number, address: string} = {

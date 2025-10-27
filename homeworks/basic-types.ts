@@ -46,5 +46,12 @@ let isPositiveNum: string = numOne > 0
     ? `The number ${numOne} is positive`
     : `The number ${numOne} is negative`;
 
-// ifelse statements
-//basic ifelse practices and logic
+//if else statements
+//basic if else practices and logic
+
+//union types
+let id: string | number;//string OR number, for example API call returning ID and we assign it to this
+id = 10;
+id = "10";
+
+let result: number | boolean | null;
