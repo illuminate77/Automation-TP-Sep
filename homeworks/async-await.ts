@@ -67,7 +67,7 @@ async function getData() {
     console.log(`Category: ${data.category}`);
     //can also do return data;
 }
-getData();
+//getData();
 
 try {
     const jsonData = JSON.parse('{"valid": true}')
@@ -77,3 +77,34 @@ try {
 } finally {
     console.log("JSON parser ready");
 }
+
+// try/catch/finally exercise
+function divideNumbers (numOne: number, numTwo: number) {
+    try {
+        if (numTwo === 0) {
+            throw new Error("Cannot divide by zero!");
+        } else {
+             const result: number = numOne / numTwo;
+             console.log(`Result is ${result}`);
+        }
+    } catch (err: unknown) {
+        console.log(`${err}`);
+    } finally {
+        console.log("Operation finished");
+    }
+};
+
+divideNumbers(20, 0);
+
+async function getData1(): Promise<void> {
+    try {
+        const response = await fetch("https://fakestoeapi.com/products/1");
+        const data: Product = await response.json();
+        console.log(data);
+    } catch (error: unknown) {
+        console.error(error);
+    } finally {
+        console.log('Operation completed');
+    }
+};
+getData1();
